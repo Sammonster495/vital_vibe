@@ -11,7 +11,7 @@ export default function Anav(props) {
 
   return (
     <div
-      className={`h-40 top-0 px-30 p-4 justify-between ${isOpen ? "" : "flex"}`}
+      className={`h-40 top-0 px-30 p-4 justify-between lg:flex ${isOpen ? "" : ""}`}
     >
       <div className="flex space-x-3">
         <img src="logo.jpg" alt="Vital Vibe" />
@@ -20,8 +20,8 @@ export default function Anav(props) {
         </h1>
       </div>
       <ul
-        className={` p-5 ${
-          isOpen ? "h-[300px]" : "flex space-x-8 max-lg:hidden"
+        className={` p-5 lg:space-x-4 lg:flex ${
+          isOpen ? "" : "flex max-lg:hidden"
         }`}
         
       >
