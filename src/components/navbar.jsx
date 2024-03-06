@@ -14,8 +14,8 @@ export default function Anav(props) {
       className={`px-30 p-4 justify-between lg:flex ${isOpen ? "" : ""}`}
     >
       <div className="flex space-x-3">
-        <img src="logo.jpg" alt="Vital Vibe" />
-        <h1 className="text-[#FF7F50] font-kod text-4xl m-10">
+        <img src="logo.jpg" alt="Vital Vibe" className="max-sm:h-[80px]"/>
+        <h1 className="text-[#FF7F50] font-kod text-4xl sm:m-10 max-sm:m-5 max-sm:text-2xl">
           VITAL <span className="text-[#74F0ED]">VIBE</span>
         </h1>
       </div>
@@ -55,7 +55,7 @@ export default function Anav(props) {
           </li>
         </div>
       </ul>
-      <div className="text-white lg:hidden absolute right-10 top-12">
+      <div className="text-white lg:hidden absolute right-10 top-12 max-sm:top-7">
         <Hamburger onToggle={openMenu}  />
       </div>
     </div>
