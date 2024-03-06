@@ -19,4 +19,22 @@
     border-radius: 40px;
     margin: auto;
     margin-bottom: 20px;
+}
+
+.home-background{
+    background-image: url("../public/background.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.text-box{
+    background-image: url("../public/textbox.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.my-shadow {
+    box-shadow: 10px 12px 2px #74F0ED;
   }
