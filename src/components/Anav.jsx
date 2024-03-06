@@ -5,9 +5,6 @@ import React from "react";
 
 export default function Anav(props) {
   const [isOpen, setOpen] = React.useState(false);
-  const openMenu = () => {
-    setOpen(!isOpen);
-  };
 
   return (
     <div
@@ -20,10 +17,9 @@ export default function Anav(props) {
         </h1>
       </div>
       <ul
-        className={` p-5 ${
-          isOpen ? "h-[300px]" : "flex space-x-8 max-lg:hidden"
+        className={` p-5  ${
+          isOpen ? "h-[300px]" : "max-lg:hidden flex space-x-8"
         }`}
-        
       >
         {props.about && (
           <div className="gradient-border">
@@ -56,7 +52,7 @@ export default function Anav(props) {
         </div>
       </ul>
       <div className="text-white lg:hidden absolute right-10 top-12">
-        <Hamburger onToggle={openMenu}  />
+        <Hamburger toggled={isOpen} toggle={setOpen} />
       </div>
     </div>
   );
