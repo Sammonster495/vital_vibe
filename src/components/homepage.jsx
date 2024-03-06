@@ -1,5 +1,4 @@
 import Navbar from './navbar';
-import Anav from './Anav.jsx';
 
 export default function HomePage() {
     return (
