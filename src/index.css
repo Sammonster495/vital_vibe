@@ -1,3 +1,22 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@layer components{
+    .bd{
+        @apply border border-white;
+    }
+    .nav-item{
+        @apply text-white font-kod  bg-black rounded-sm p-3;
+    }
+}
+
+.gradient-border {
+    padding: 5px;
+    width: max-content;
+    height: max-content;
+    background-image: linear-gradient(to right, #74F0ED, #FF7F50);
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
