@@ -11,10 +11,10 @@ export default function Anav(props) {
 
   return (
     <div
-      className={`h-40 top-0 px-30 p-4 justify-between lg:flex ${isOpen ? "" : ""}`}
+      className={`h-40 top-0 px-[110px] p-4 justify-between lg:flex ${isOpen ? "" : ""}`}
     >
       <div className="flex space-x-3">
-        <img src="logo.jpg" alt="Vital Vibe" />
+        <img src="logo.jpg" alt="Vital Vibe"/>
         <h1 className="text-[#FF7F50] font-kod text-4xl m-10">
           VITAL <span className="text-[#74F0ED]">VIBE</span>
         </h1>
@@ -28,15 +28,15 @@ export default function Anav(props) {
         {props.about && (
           <div className="gradient-border">
             <li className="nav-item">
-              <Link to="/about">About Us</Link>
+              <Link to="/about" className="mx-2.5 text-md">About Us</Link>
             </li>
           </div>
         )}
 
         {props.home && (
           <div className="gradient-border">
-            <li className="nav-item">
-              <Link to="/home">Home</Link>
+            <li className="nav-item ">
+              <Link to="/home" className="mx-7">Home</Link>
             </li>
           </div>
         )}
@@ -49,7 +49,7 @@ export default function Anav(props) {
         )}
         <div className="gradient-border">
           <li className="nav-item">
-            <ScrollLink to="contact" activeClass="active" smooth={true}>
+            <ScrollLink to="contact" activeClass="active" smooth={true} className="mx-0.5">
               Contact Us
             </ScrollLink>
           </li>

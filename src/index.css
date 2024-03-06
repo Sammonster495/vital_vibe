@@ -7,16 +7,16 @@
         @apply border border-white;
     }
     .nav-item{
-        @apply text-white font-kod  bg-black rounded-sm p-3;
+        @apply text-white font-kod text-lg  bg-black rounded-3xl p-3  ;
     }
 }
 
 .gradient-border {
-    padding: 5px;
-    width: max-content;
+    padding: 4px;
+    width: 140px;
     height: max-content;
     background-image: linear-gradient(to right, #74F0ED, #FF7F50);
-    border-radius: 5px;
+    border-radius: 40px;
     margin: auto;
     margin-bottom: 20px;
   }
