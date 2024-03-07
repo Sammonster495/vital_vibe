@@ -1,40 +1,46 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-@layer components{
-    .bd{
-        @apply border border-white;
-    }
-    .nav-item{
-        @apply text-white font-kod text-lg  bg-black rounded-3xl p-3  ;
-    }
+@layer components {
+  .bd {
+    @apply border border-white;
+  }
+  .nav-item {
+    @apply text-white font-kod text-lg  bg-black rounded-3xl p-3;
+  }
 }
 
 .gradient-border {
-    padding: 4px;
-    width: 140px;
-    height: max-content;
-    background-image: linear-gradient(to right, #74F0ED, #FF7F50);
-    border-radius: 40px;
-    margin: auto;
-    margin-bottom: 20px;
+  padding: 4px;
+  width: 140px;
+  height: max-content;
+  background-image: linear-gradient(to right, #74f0ed, #ff7f50);
+  border-radius: 40px;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
-.home-background{
-    background-image: url("../public/background.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+.home-background {
+  background-image: url("../public/background.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
-.text-box{
-    background-image: url("../public/textbox.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+.text-box {
+  background-image: url("../public/textbox.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .my-shadow {
-    box-shadow: 10px 12px 2px #74F0ED;
-  }
+  box-shadow: 10px 12px 2px #74f0ed;
+}
+
+.muscle-gain {
+  background-image: url("../public/Rectangle2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
