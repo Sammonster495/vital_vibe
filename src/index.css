@@ -44,3 +44,7 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.plans-button{
+  background-image: linear-gradient(to left, #74f0ed, #ff7f50);
+}
