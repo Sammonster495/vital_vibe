@@ -14,7 +14,7 @@ export default function Anav(props) {
       className={`sm:px-[110px] p-4 justify-between lg:flex ${isOpen ? "" : ""}`}
     >
       <div className="flex space-x-3">
-        <img src="logo.jpg" alt="Vital Vibe"/>
+        <img src="logo.jpg" alt="Vital Vibe" className="max-sm:h-[100px]"/>
         <h1 className="text-[#FF7F50] font-kod sm:text-4xl m-10 max-sm:text-2xl">
           VITAL <span className="text-[#74F0ED]">VIBE</span>
         </h1>
