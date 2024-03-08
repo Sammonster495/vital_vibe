@@ -43,6 +43,26 @@
   background-image: url("../public/Rectangle2.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+}
+
+.weight-loss {
+  background-image: url("../public/Rectangle3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+.strength-focus {
+  background-image: url("../public/Rectangle4.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: multiply;
+  background-size: cover;
 }
 
 .plans-button{
