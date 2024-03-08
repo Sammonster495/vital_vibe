@@ -43,6 +43,8 @@
   background-image: url("../public/Rectangle2.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-color: rgba(0, 0, 0, 0.4); /* Set the background color with the desired opacity value */
+  background-blend-mode: multiply;
 }
 
 .plans-button{
