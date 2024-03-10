@@ -9,6 +9,7 @@ module.exports = {
       fontFamily:{
         kod:['Kodchasan', 'sans-serif'],
         kou:['Koulen', 'sans-serif'],
+        'krona': ['"Krona One"', 'sans-serif'],
       }
     },
   },

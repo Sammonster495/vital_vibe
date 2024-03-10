@@ -36,7 +36,7 @@ export default function Anav(props) {
         {props.home && (
           <div className="gradient-border">
             <li className="nav-item ">
-              <Link to="/home" className="mx-7">Home</Link>
+              <Link to="/" className="mx-7">Home</Link>
             </li>
           </div>
         )}
