@@ -1,13 +1,13 @@
 export default function HomeCard(props){
     return(
-        <div className="w-max h-max relative lg:m-auto lg:my-10 md:my-8">
+        <div className="sm:h-auto sm:w-auto h-[294px] relative m-4">
             <img
               src={props.image}
               alt={props.image}
-              className="rounded-[30px] my-shadow"
+              className="lg:rounded-[30px] md:rounded-3xl sm:rounded-2xl rounded-[26px] sm:h-auto h-[290px] my-shadow"
             />
-            <div className={`absolute left-8 ${props.position}`}>
-                <p className="text-5xl font-kou">{props.text}</p>
+            <div className={`absolute ${props.position}`}>
+                <p className="lg:text-5xl md:text-4xl sm:text-3xl text-4xl font-kou">{props.text}</p>
             </div>
         </div>
     )
