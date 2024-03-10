@@ -2,13 +2,11 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@layer components {
-  .bd {
-    @apply border border-white;
-  }
-  .nav-item {
-    @apply text-white font-kod text-lg  bg-black rounded-3xl p-3;
-  }
+.bd {
+  @apply border border-white;
+}
+.nav-item {
+  @apply text-white font-kod text-lg  bg-black rounded-3xl p-3;
 }
 
 .gradient-border {

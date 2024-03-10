@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontFamily:{
         kod:['Kodchasan', 'sans-serif'],
+        kou:['Koulen', 'sans-serif'],
       }
     },
   },

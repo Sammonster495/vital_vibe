@@ -7,23 +7,13 @@ export default function HomePage() {
             <Navbar home={false} about={true} plan={true} />
             <img src="background.jpg" alt="Home Background" className="w-full" />
             <div className="text-white font-kod">
-        <p className="text-center text-[#74F0ED] text-3xl max-sm:text-2xl">
-          CUSTOMIZED PLAN CATERED TO YOUR GOALS
-        </p>
-        <div className="lg:flex justify-between py-14 px-20">
-          <HomeCard image="musclegain.jpg" text="MUSCLE GAIN" position='5'  />
-          <HomeCard image="musclegain.jpg" text="MUSCLE GAIN" position={85}  />
-          
-          <div className="w-max h-max relative m-auto my-10">
-            <img
-              src="musclegain.jpg"
-              alt="MuscleGain.jpg"
-              className="rounded-[30px] my-shadow"
-            />
-            <p className="absolute bottom-[85%] left-3 text-4xl">MUSCLE GAIN</p>
-          </div>
-        </div>
-      </div>
+            <p className="text-center text-[#74F0ED] text-3xl max-sm:text-2xl">CUSTOMIZED PLAN CATERED TO YOUR GOALS</p>
+              <div className="lg:flex justify-between py-14 px-20">
+                <HomeCard key="muscle gain" image="musclegain.jpg" text="MUSCLE GAIN" position="bottom-5"  />
+                <HomeCard key="weight loss" image="weightloss.jpg" text="WEIGHT LOSS" position="top-[45%]"  />
+                <HomeCard key="strength" image="strength.jpg" text="STRENGTH" position="top-5 left-14"  />
+              </div>
+            </div>
         </div>
     );
 }
