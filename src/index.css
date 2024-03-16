@@ -2,6 +2,15 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@layer components {
+  .plan-inputs {
+    @apply p-10 w-[300px] max-sm:m-auto;
+  }
+  .plan-input {
+    @apply rounded-full h-14 sm:w-80 w-52 text-black;
+  }
+}
+
 .bd {
   @apply border border-white;
 }
@@ -63,6 +72,6 @@
   background-size: cover;
 }
 
-.plans-button{
+.plans-button {
   background-image: linear-gradient(to left, #74f0ed, #ff7f50);
 }
