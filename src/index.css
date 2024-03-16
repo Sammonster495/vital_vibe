@@ -4,10 +4,10 @@
 
 @layer components {
   .plan-inputs {
-    @apply p-10 w-[300px] max-sm:m-auto;
+    @apply sm:p-10 p-5 sm:w-[400px] lg:w-[500px] max-sm:m-auto text-lg;
   }
   .plan-input {
-    @apply rounded-full h-14 sm:w-80 w-52 text-black;
+    @apply rounded-full h-14 sm:w-full w-52 text-black px-5 py-2 max-sm:w-[250px] placeholder:text-slate-600 bg-slate-200;
   }
 }
 
@@ -74,4 +74,9 @@
 
 .plans-button {
   background-image: linear-gradient(to left, #74f0ed, #ff7f50);
+  transition: transform 0.3s ease;
+}
+
+.plans-button:hover {
+  transform: translateY(-5px);
 }

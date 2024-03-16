@@ -11,16 +11,16 @@ function weightloss() {
         Enter your detais
       </p>
       <form action="" className="text-white font-kod">
-        <div className="grid sm:grid-cols-2 sm:gap-x-10">
+        <div className="grid sm:grid-cols-2">
           <div className="plan-inputs sm:ml-auto">
             <label htmlFor="name">Name :</label>
             <br />
-            <input type="text" className="plan-input" />
+            <input type="text" className="plan-input" placeholder="Enter your name" required/>
           </div>
           <div className="plan-inputs">
             <label htmlFor="age">Age :</label>
             <br />
-            <input type="number" className="plan-input" />
+            <input type="number" className="plan-input" min="1" placeholder="Enter your age" required/>
           </div>
           <div className="plan-inputs sm:ml-auto">
             <label htmlFor="gender">Gender : </label>
@@ -28,7 +28,7 @@ function weightloss() {
             <select
               id="gender"
               name="gender"
-              className="text-black rounded-full h-14 sm:w-80 w-52"
+              className="plan-input"
             >
               <option value="male">Male</option>
               <option value="female">Female</option>
@@ -38,12 +38,12 @@ function weightloss() {
           <div className="plan-inputs">
             <label htmlFor="weight">Current Weight :</label>
             <br />
-            <input type="number" className="plan-input" />
+            <input type="number" className="plan-input" min="1" placeholder="Enter your weight in kg" required/>
           </div>
           <div className="plan-inputs sm:ml-auto">
             <label htmlFor="height">Height :</label>
             <br />
-            <input type="number" className="plan-input" />
+            <input type="number" className="plan-input" min="1" placeholder="Enter your height in cm" required/>
           </div>
           <div className="plan-inputs">
             <label htmlFor="experience">Experience : </label>
@@ -51,7 +51,7 @@ function weightloss() {
             <select
               name="experience"
               id="experience"
-              className="text-black rounded-full h-14 sm:w-80 w-52"
+              className="plan-input"
             >
               <option value="beginner">Beginner</option>
               <option value="intermediate">Intermediate</option>
@@ -59,10 +59,10 @@ function weightloss() {
             </select>
           </div>
         </div>
-        <div className="plan-inputs sm:w-min m-auto">
-          <label htmlFor="hours">No. of hours per day:</label>
+        <div className="plan-inputs max-sm:w-min m-auto">
+          <label htmlFor="hours">No. of workout hours per day:</label>
           <br />
-          <input type="number" className="plan-input" />
+          <input type="number" className="plan-input" placeholder="Enter workout hours" required/>
         </div>
         <div className="flex justify-center my-10">
           <button className="plans-button p-5 w-[200px] rounded-lg text-xl text-black">
