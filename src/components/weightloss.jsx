@@ -3,6 +3,8 @@ import { useState } from "react";
 import axios from "axios";
 
 function Weightloss() {
+
+  const [message, setMessage] = useState('');
   const [formData, setFormData] = useState({
     name: "",
     age: "",
@@ -24,10 +26,10 @@ function Weightloss() {
     event.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000",
+        "http://localhost:5000/plan/weightloss",
         formData
       );
-      console.log(response.data); // Handle response from the server
+      setMessage(response.data.message); // Handle response from the server
     } catch (error) {
       console.log(error); // Handle error
     }
@@ -152,6 +154,7 @@ function Weightloss() {
           </button>
         </div>
       </form>
+      {message && <p className="bg-white text-black w-full">{message}</p>}
     </div>
   );
 }
